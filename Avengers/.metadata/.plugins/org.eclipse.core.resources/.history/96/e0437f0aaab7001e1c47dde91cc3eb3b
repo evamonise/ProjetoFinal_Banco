@@ -1,0 +1,14 @@
+package test;
+
+public class Executar {
+
+	public static void main(String[] args) {
+		
+		TesCon conta = new TesCon();
+		TesContCorre contacorrente = new TesContCorre();
+		conta.abrirConta();
+		contacorrente.abrirContaCorrente();
+
+	}
+
+}
