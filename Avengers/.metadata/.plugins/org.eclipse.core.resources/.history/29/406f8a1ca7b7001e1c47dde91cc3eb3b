@@ -1,0 +1,11 @@
+package test;
+
+public class TesContCorre extends TesCont{
+	
+	@Override
+	public void abrirContaCorrente() {
+		this.setSaldo(75);
+		System.out.println("Olá " + nomeFormatado() + ", seja bem-vindo(a), sua conta foi aberta com sucesso!");
+		System.out.printf("Você ganhou um saldo bonus de: R$ %.2f", this.saldo);
+	}
+}

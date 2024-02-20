@@ -1,0 +1,12 @@
+package test;
+
+public class TesContCorre extends TesCon{
+	
+	@Override
+	public void abrirContaCorrente() {
+		System.out.printf("Olá " , nomeFormatado() , ", seja bem-vindo(a), sua conta foi aberta com sucesso!");
+		
+}
+
+
+	}

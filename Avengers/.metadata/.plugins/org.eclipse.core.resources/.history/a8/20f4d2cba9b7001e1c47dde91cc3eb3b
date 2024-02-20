@@ -1,0 +1,54 @@
+package test;
+
+import java.util.Scanner;
+
+public class TesCon {
+	
+	
+	
+	protected String nome;
+	protected String tipoConta;
+	
+	
+	
+	public void abrirConta() {
+		Scanner S = new Scanner(System.in);
+		System.out.println("==========================ABRIR CONTA=========================");
+		System.out.println("Para abrir uma conta é necessario que você informe alguns dados pessoais.");
+		System.out.println();
+		System.out.println("Nome completo: ");
+		this.nome = S.nextLine();
+		System.out.println("Tipo da conta: conta corrente ou conta poupança ");
+		this.tipoConta = S.nextLine();
+			
+		if (tipoConta.equalsIgnoreCase("conta corrente")) {
+			abrirContaCorrente();
+		} else if (tipoConta.equalsIgnoreCase("conta poupança") ||tipoConta.equalsIgnoreCase("conta poupanca")) {
+//			abrirContaPoupanca();
+		} else {
+			System.out.println("Atenção!! opções que são validas: conta corrente ou conta poupança");
+		}
+		S.close();	
+		}
+	
+
+	
+	private void abrirContaCorrente() {
+		
+		
+	}
+
+
+
+	public String nomeFormatado() {
+		String[] nomes = this.nome.split(" ");
+		String primeiroNome = nomes[0];
+		String segundoNome = nomes[1];
+		return primeiroNome + " " + segundoNome;
+	}
+
+
+
+
+	
+}
